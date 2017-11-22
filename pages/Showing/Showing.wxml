@@ -1,0 +1,5 @@
+<!--pages/Showing/Showing.wxml-->
+<view class="container" style="height:568px;background:#fff;">
+<image src="{{imageUrl}}" style="{{showing?'':'display:none;'}}width:{{width}}px;height:{{height}}px;"></image>
+<view class="countdown">{{currentTime}} / 3</view>
+</view>

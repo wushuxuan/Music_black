@@ -1,0 +1,26 @@
+<!--pages/MV/MV.wxml-->
+<view class="container" style="">
+  <view class="flex-mv">
+    <view class="flex-top">
+      <view class="top-left"><text class="iconfont icon-close"></text></view>
+      <view class="top-right"><text class="iconfont icon-share"></text></view>
+    </view>
+    <view class="flex-contents">
+      <view class="flex-wrap">
+        <video id="myVideo" controls="true"  style="width:100%;" danmu-btn="true"
+        objectFit="fill" enable-danmu="{{hidden}}" poster="http://photo.hanyu.iciba.com/upload/encyclopedia_2/46/45/bk_4645e20d3c465813694291834414da9d_fUxVd0.jpg"   
+        src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video></view>
+
+      <view class="flex-content">
+        <view class="flex-title">NINE MUSES</view>
+        <view class="flex-name"><text>나인뮤지스 / ナイン ミュージス</text><text>142万次播放</text></view>
+        <view class="index-nav">
+          <navigator class="flex-wrap" wx:for="{{indexnav}}" wx:key="{{indexnav}}">
+            <view class='iconfont {{item.icon}}'></view>
+            <view>{{item.content}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

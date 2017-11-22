@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="indexHeader">
+    <view class="flex-left">
+      <image mode='widthFix' src="https://raw.githubusercontent.com/wushuxuan/MusicResources/master/index/indexlogo.png"></image>
+    </view>
+    <view class="flex-right">
+      <view class="header-date"><text class="iconfont icon-time"></text><view class="date"> 11月20日</view><text class="gengxin">更新</text></view>
+      <view class="header-content">POCKER用户一周内收听说有线上歌曲的官方排行榜，每日上午10时更新</view>
+      <image class='header-button' mode='widthFix' src="../../image/show@1x.png"></image>
+    </view>
+  </view>
+
+  <view class="index-nav">
+    <navigator class="flex-wrap" wx:for="{{indexnav}}" wx:key="{{indexnav}}">
+      <view class='iconfont {{item.icon}}'></view>
+      <view>{{item.content}}</view>
+    </navigator>
+  </view>
+
+
+  <view class="index-list">
+    <view data-index='{{index}}' class="flex-wrap {{index==id?'flex-wraping':''}}" bindtap="play"  hover-class="flex-wrap-hover"  wx:for="{{MusicList}}" wx:key="{{MusicList}}" style="{{index==id?'background:#1C2232':''}}">
+      <view class="flex-id">{{item.id}} <text class="iconfont icon-dian"></text> </view>
+      <view class="flex-image" style="position:relative;">
+        <image mode="widthFix" src="{{item.imageUrl}}"></image>
+      </view>
+      <view class="flex-text">
+        <text>{{item.name}}</text>
+        <text>{{item.author}}</text>
+      </view>
+       <view class="flex-ranking">
+        <text class="iconfont {{item.ranking}}" style="{{item.ranking=='icon-upicon'?'color:#F50C4B;':'color:#039CD8;'}}"></text>
+        <text>{{item.ranknamber}}</text>
+      </view>
+      <view class='flex-more'>
+        <text  class="iconfont icon-moreicon"></text>
+      </view>
+    
+    
+    <audio style="position:absolute;z-index:10;left:10%;opacity:0;" bindtimeupdate="MusicStart" bindended="MusicEnd" wx:for="{{MusicList}}" wx:key="{{item}}" author="{{item.author}}" controls poster="{{item.image}}" name="{{item.name}}" src='{{item.url}}'>
+      <view class="free-MusicProgress">
+        <view style="width:{{progress}}%;"></view>
+      </view>
+    </audio>
+    </view>
+    
+  </view>
+</view>

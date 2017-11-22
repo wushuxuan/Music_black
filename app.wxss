@@ -1,0 +1,47 @@
+/**app.wxss**/
+page{
+  background:#181C28;
+}
+.container {
+  height: 100%;
+  display: flex;
+  color:#fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+@font-face {
+  font-family: 'iconfont';  /* project id 473319 */
+  src: url('//at.alicdn.com/t/font_473319_uxybj7huh8q9qkt9.eot');
+  src: url('//at.alicdn.com/t/font_473319_uxybj7huh8q9qkt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_473319_uxybj7huh8q9qkt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_473319_uxybj7huh8q9qkt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_473319_uxybj7huh8q9qkt9.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    color:#fff;font-size:16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.02px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-dian:before { content: "\e600"; }/*点*/
+.icon-time:before { content: "\e606"; }/*时间*/
+.icon-talk:before { content: "\e629"; }/*留言*/
+.icon-collect:before { content: "\e682"; }/*s收藏*/
+.icon-download:before { content: "\e604"; }/*下载*/
+.icon-share:before { content: "\e61f"; }/*分享*/
+.icon-upicon:before { content: "\e6fe"; }/*上升*/
+.icon-downicon:before { content: "\e623"; }/*下降*/
+.icon-moreicon:before { content: "\e617"; }/*更多*/
+.icon-play:before { content: "\e6d0"; }/*更多*/
+.icon-close:before { content: "\e69c"; }/*关闭*/
+.icon-exceptional:before { content: "\e603"; }/*打赏*/
+
+.icon-list:before { content: "\e654"; }/*歌单*/
+.icon-listenting:before { content: "\e73b"; }/*最近播放*/
+.icon-cellect:before { content: "\e6b9"; }/*个人中心收藏*/
+

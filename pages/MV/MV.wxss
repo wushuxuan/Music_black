@@ -1,0 +1,79 @@
+/* pages/MV/MV.wxss */
+page{
+  background:-webkit-radial-gradient(#DA0B41,#201D4D)
+}
+.flex-mv{
+  width:90%;
+  margin:0 auto;
+}
+.flex-contents{
+    width:90%;
+    background: #1C2232;
+    padding-bottom:30px;
+    position: absolute;
+    top:0px;
+}
+.flex-top{
+  width:100%;
+  margin-top:20px;
+  display: flex;
+  flex-flow: row;
+}
+.flex-top>view{
+  display: inline-block;
+  width:50%;
+}
+.flex-top>view text{
+  font-size:25px;
+  opacity: 0.5
+}
+.flex-top .top-right{
+  text-align: right;
+}
+.flex-top .top-right text.iconfont{
+  background:-webkit-linear-gradient(left,#f00,#ff0 25%,#0f0 40%,#0ff 55%,#00f 70%,#f00);
+  -webkit-background-clip:text;
+}
+.flex-wrap{
+  width:100%;
+  background:#1C2232;
+  margin:15px auto;
+}
+.flex-wrap video{
+  width:100%;
+}
+.flex-content .flex-title{
+  width:95%;
+  margin:10px auto 5px
+}
+.flex-content .flex-name{
+  width:95%;
+  font-size:12px;
+  color:#999;
+  margin:0px auto 5px;
+  display: flex;
+  flex-flow: row;
+}
+.flex-content .flex-name text{
+  width:75%;
+  display: inline-block;
+}
+.flex-content .flex-name text:nth-child(2){
+  width:25%;
+  text-align: right;
+}
+/*header导航*/
+.index-nav{
+  width:95%;
+  display: flex;flex-flow: row;
+  margin:5% auto;
+}
+.index-nav .flex-wrap{
+  width:25%;
+  text-align: center;
+  font-size:12px;
+}
+.index-nav .flex-wrap .iconfont{
+  font-size:23px;
+  margin-bottom:5px;
+}

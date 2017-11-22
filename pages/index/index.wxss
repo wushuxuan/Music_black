@@ -1,0 +1,134 @@
+/**index.wxss**/
+.indexHeader{
+  width:100%;
+  padding:5% 0;
+  display: flex;
+  flex-flow: row;
+}
+.indexHeader>view{
+  width:50%;
+}
+.indexHeader>view image{
+  width:100%;
+}
+
+/*header左侧文字*/
+.flex-right{
+  padding-top:10%;
+}
+.flex-right .header-date{
+  display: flex;flex-flow: row;
+}
+.flex-right .iconfont{
+  width:8%;
+  line-height: 60rpx;
+  font-size:25rpx;
+  margin-left:7%;
+  text-align: left;
+}
+.flex-right .date{
+  width:65%;
+  text-align: center;
+  font-size: 47rpx;
+}
+.flex-right .gengxin{
+  width:15%;
+  text-align: left;
+  font-size:10px;
+}
+.flex-right .header-content{
+  width:90%;
+  text-align: center;
+  font-size:9px;
+  margin:10px auto;
+}
+.flex-right .header-button{
+  display: inline-block;
+  width:60%;
+  margin-top:3%;
+  margin-left:20%;
+}
+/*header导航*/
+.index-nav{
+  width:95%;
+  display: flex;flex-flow: row;
+  margin:2% auto 4%;
+}
+.index-nav .flex-wrap{
+  width:25%;
+  text-align: center;
+  font-size:12px;
+}
+.index-nav .flex-wrap .iconfont{
+  font-size:23px;
+  margin-bottom:5px;
+}
+
+/*音乐列表*/
+.index-list{
+  width:100%;
+}
+.index-list .flex-wrap{
+  width:96%;
+  padding:3% 2%;
+  display: flex;
+  flex-flow: row;
+}
+.index-list .flex-wrap .flex-id{
+  width:15%;
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  font-size:13px;
+}
+.index-list .flex-wrap .flex-image{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  text-align: center;
+}
+
+.index-list .flex-wrap .flex-image image{
+  width:50px;
+  height:50px;
+  line-height: 50px;
+  border-radius:50%;
+}
+.index-list .flex-wrap .flex-text{
+  width:40%;
+  height:30%;
+  margin-left:5%;
+  display: flex;
+  flex-flow: column;
+}
+.index-list .flex-wrap .flex-text text{ 
+  font-size:14px;
+  height:25px;
+  line-height: 25px;
+}
+.index-list .flex-wrap .flex-text text:nth-child(2){ 
+  font-size:11px;
+  height:25px;
+  line-height: 25px;
+  color:#888;
+}
+.index-list .flex-wrap .flex-ranking{
+  width:25%;
+  height:50px;
+  line-height: 50px;
+  font-size:13px;
+  text-align: right;
+}
+.index-list .flex-wrap .flex-more{
+  width:5%;
+  text-align: right;
+  height:50px;
+  line-height: 50px;
+}
+
+/*点击效果*/
+.index-list .flex-wraping .flex-image{
+  border-width:2px;
+  border-style:solid;
+  border-color:#FE2472 #FF23A4 #FF228C #FF2363;
+}
